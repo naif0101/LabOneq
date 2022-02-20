@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Name"
+            android:textColor="#FCE3DA"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="293dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FCE3DA"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:textColor="#FCE3DA"
+            android:textColorHint="#B2FCE3DA" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Email"
+            android:textColor="#FCE3DA"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="259dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FCE3DA"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#FCE3DA"
+            android:textColorHint="#B2FCE3DA" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FCE3DA"
+            android:text="Position"
+            android:textColor="#FCE3DA"
+            android:textColorHint="#B2FCE3DA"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/Positions"
+            android:minHeight="48dp"
+            android:popupBackground="#31C2C2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Phone"
+            android:textColor="#FCE3DA"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="188dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FCE3DA"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColor="#FCE3DA"
+            android:textColorHint="#B2FCE3DA" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FLIP CARD"
+            android:textColor="#FCE3DA"
+            app:backgroundTint="#31C2C2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
